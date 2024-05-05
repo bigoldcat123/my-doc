@@ -3,15 +3,15 @@
 layout: home
 
 hero:
-  name: "大佬猫的香蒲"
-  text: "Dale Lowe"
-  tagline: My great project tagline
+  name: "Dale Lowe's 香蒲"
+  text: "🍓🍓🍓🍓🍓"
+  tagline: 芝士焗鸡
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 博客
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 关于我
       link: /api-examples
 
 features:
