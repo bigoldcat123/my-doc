@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
+  name: "大佬猫的香蒲"
+  text: "Dale Lowe"
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -23,3 +23,4 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+### aaa
