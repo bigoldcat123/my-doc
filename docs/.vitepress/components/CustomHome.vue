@@ -9,13 +9,14 @@ import CustomHomeContent from './CustomHomeContent.vue';
 
 import { useData } from 'vitepress'
 
-const { frontmatter } = useData()
+const { frontmatter,isDark } = useData()
 </script>
 
 <template>
   <div class="VPHome">
     <slot name="home-hero-before" />
-    <div style="background-color: antiquewhite;">
+    <div :style="isDark? 'background: linear-gradient(to bottom, #0f0c29, #302b63, #1b1b1f);':
+                         'background: linear-gradient(to bottom, white,yellow, white);'">
       <CustomHomeHero  class="VPHomeHero">
       <template #home-hero-info-before><slot name="home-hero-info-before" /></template>
       <template #home-hero-info><slot name="home-hero-info" /></template>

@@ -2,7 +2,6 @@
 import { type Ref, inject } from 'vue'
 import { useData, type DefaultTheme } from 'vitepress'
 import {VPImage,VPButton} from 'vitepress/theme'
-const { isDark, theme } = useData()
 
 export interface HeroAction {
   theme?: 'brand' | 'alt'
@@ -30,7 +29,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
         <slot name="home-hero-info-before" />
         <slot name="home-hero-info">
           <h1 v-if="name" class="name">
-            <span v-html="name + isDark" class="clip"></span>
+            <span v-html="name " class="clip"></span>
           </h1>
           <p v-if="text" v-html="text" class="text"></p>
           <p v-if="tagline" v-html="tagline" class="tagline"></p>
