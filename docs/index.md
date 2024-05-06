@@ -12,7 +12,7 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: 关于我
-      link: /api-examples
+      link: /Readme
 
 features:
   - title: Feature A

@@ -1,6 +1,8 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
-
+import nav from './navbar.mts'
+import sidebar from './sidebar.mts'
+import outline from './outline.mts'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Dale Lowe",
@@ -8,20 +10,9 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    nav,
+//@ts-ignore
+    sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bigoldcat123' }
