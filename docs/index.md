@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 博客
-      link: /markdown-examples
+      link: /backend/readme
     - theme: alt
       text: 关于我
       link: /Readme
