@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+footer: true
 hero:
   name: "Dale Lowe's 香蒲"
   text: "🍓🍓🍓🍓🍓"
@@ -12,17 +12,20 @@ hero:
   actions:
     - theme: brand
       text: 博客
-      link: /backend/readme
+      link: /backend/
     - theme: alt
       text: 关于我
       link: /Readme
 
 features:
   - title: Feature A
+    icon: 🥔
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
+    icon: 🍄
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
+    icon: 🥝
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
