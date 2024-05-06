@@ -2,10 +2,11 @@
 // import VPHomeHero from 'vitepress'
 // import VPHomeFeatures from 'vitepress'
 // import VPHomeContent from 'vitepress'
-import { VPHomeHero } from 'vitepress/theme';
+import CustomHomeHero from './CustomHomeHero.vue';
 import { VPHomeFeatures } from 'vitepress/theme';
 // import  VPHomeContent  from 'vitepress/theme';
 import CustomHomeContent from './CustomHomeContent.vue';
+
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
@@ -14,18 +15,21 @@ const { frontmatter } = useData()
 <template>
   <div class="VPHome">
     <slot name="home-hero-before" />
-    <VPHomeHero class="VPHomeHero">
+    <div style="background-color: antiquewhite;">
+      <CustomHomeHero  class="VPHomeHero">
       <template #home-hero-info-before><slot name="home-hero-info-before" /></template>
       <template #home-hero-info><slot name="home-hero-info" /></template>
       <template #home-hero-info-after><slot name="home-hero-info-after" /></template>
       <template #home-hero-actions-after><slot name="home-hero-actions-after" /></template>
       <template #home-hero-image><slot name="home-hero-image" /></template>
-    </VPHomeHero>
+    </CustomHomeHero>
     <slot name="home-hero-after" />
 
     <slot name="home-features-before" />
     <VPHomeFeatures />
     <slot name="home-features-after" />
+    </div>
+
 
     <CustomHomeContent v-if="frontmatter.markdownStyles !== false">
       <Content />
