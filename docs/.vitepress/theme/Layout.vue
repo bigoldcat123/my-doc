@@ -4,7 +4,6 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
-import { VPButton } from 'vitepress/theme';
 const { isDark } = useData()
 
 const enableTransitions = () =>
