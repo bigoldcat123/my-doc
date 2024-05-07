@@ -12,7 +12,8 @@ export default {
         text: outline.FRONT_END,
         items: [
             { text: '首', link: `/${outline.BACK_END}/` },
-            { text: '二1', link: `/${outline.BACK_END}/api-examples` }
+            { text: '二1', link: `/${outline.BACK_END}/api-examples` },
+            { text: '新特性', link: `/${outline.BACK_END}/newf` }
         ]
     },
     '/maintenance/': {
