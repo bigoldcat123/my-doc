@@ -13,7 +13,9 @@ import { useData } from 'vitepress'
 const { frontmatter,isDark } = useData()
 const reallDark = ref(false)
 
-var mqList = window.matchMedia('(prefers-color-scheme: dark)');
+
+
+let mqList = window.matchMedia('(prefers-color-scheme: dark)');
 const schemeChange = (event:any) => {
   if (event.matches) {
     console.log("a");
@@ -33,7 +35,6 @@ if (mqList.addEventListener) {
   // 否则, 检测 MediqQueryList 对象上是否存在 addListener 方法
   mqList.addListener(schemeChange);
 }
-
 
 </script>
 

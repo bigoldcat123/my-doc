@@ -1,14 +1,16 @@
 import outline from "./outline.mts"
-
+const FRONT_END = '/' + outline.FRONT_END + '/'
+const BACK_END = '/' + outline.BACK_END + '/'
+const MAINTENANCE = '/' + outline.MAINTENANCE + '/'
 export default {
-    '/frontend/': {
+    FRONT_END: {
         text: outline.FRONT_END,
         items: [
             { text: '首', link: `/${outline.FRONT_END}/` },
             { text: '二', link: `/${outline.FRONT_END}/api-examples` }
         ]
     },
-    '/backend/': {
+    BACK_END: {
         text: outline.FRONT_END,
         items: [
             { text: '首', link: `/${outline.BACK_END}/` },
@@ -16,7 +18,7 @@ export default {
             { text: '新特性', link: `/${outline.BACK_END}/newf` }
         ]
     },
-    '/maintenance/': {
+    MAINTENANCE: {
         text: outline.FRONT_END,
         items: [
             { text: '首', link: `/${outline.MAINTENANCE}/` },
